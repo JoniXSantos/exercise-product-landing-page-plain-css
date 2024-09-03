@@ -1,20 +1,102 @@
-/* RESETS
-    Here you put styles that modify the original behavior CSS/HTML had,
-    for example: list elements come with a little circle that nobody uses anymore.
- */
-ul{margin: 0; padding:0;}
-ul li{list-style: none;}
+body {
+    margin: auto;
+    color: rgb(86, 84, 84);
+    padding: 0px 50px;
+}
 
-/* 
-    BEHAVIORAL STYLES
-    for example: .horizontal, .container, .p-1 (for padding one)
-*/
-.p-1{ padding: 10px; }
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid darkgray;
+}
 
+#header h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
 
+#menu box {
+    padding-right: 15px;
+}
 
+#menu > box:hover {
+    color: black;
+    cursor: pointer;
+}
 
-/* 
-    SPECIFIC TO YOUR WEBSITE 
-    The more senior you become the less you have specific styles
-*/
+#menu2 {
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#menu2 > .previous:hover {
+    color: black;
+    cursor: pointer;
+}
+
+#product {
+    display: flex;
+}
+
+#gallery {
+    position: relative;
+    width: 50%;
+    margin-right: 50px;
+}
+
+#big-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 450px;
+    margin-bottom: 10px;
+}
+
+#other-images {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 180px;
+    gap: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+.otherimage {
+    object-fit: cover;
+    width: 33%;
+}
+
+.otherimage:hover {
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+#description {
+    position: relative;
+    width: 50%;
+    margin-left: 50px;
+}
+
+#price {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid darkgray;
+}
+
+#text {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    line-height: 2;
+}
+
+#button > box {
+    background-color: #3E3E3F;
+    color: white;
+    padding: 20px;
+}
+
+#button > box:hover {
+    background-color: black;
+    cursor: pointer;
+}

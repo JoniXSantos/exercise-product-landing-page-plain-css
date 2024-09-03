@@ -1,10 +1,51 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Product Langing Page in Plain HTML/CSS - BreatheCode</title>
+        <title>ShopShop</title>
         <link rel="stylesheet" type="text/css" href="./style.css">
     </head>
     <body>
-        <p>Hello! Update this index.html file and the style.css to start seing changes on your website</p>
+        <script src="./script.js"></script>
+        <div id="header">
+            <div>
+                <h1>SHOPSHOP</h1>
+            </div>
+           <div id="menu">
+                <box>Products</box>
+                <box>About</box>
+                <box>My Account</box>
+                <box id="Cart">Cart (0)</box>
+           </div>
+        </div>
+        <div id="menu2">
+                <box class="previous">HOME</box> <span>/</span>
+                <box class="previous">HOUSEHOLD PLANTS</box> <span>/</span>
+                <box><strong>BONSAI</strong></box>
+        </div>
+        <div id="product">
+            <div id="gallery">
+                <div id="big-image">
+                    <img id="currentimage" src="./assets/product3.jpeg" alt="Imagen Grande" />
+                </div>
+                <div id="other-images">
+                    <img class="otherimage" src="./assets/product3.jpeg" alt="Imagen 1" onclick="changeImage('./assets/product3.jpeg')" />
+                    <img class="otherimage" src="./assets/product2.jpeg" alt="Imagen 2" onclick="changeImage('./assets/product2.jpeg')" />
+                    <img class="otherimage" src="./assets/product1.jpeg" alt="Imagen 3" onclick="changeImage('./assets/product1.jpeg')" />
+                </div>
+            </div>
+            <div id="description">
+                <div id="price">
+                    <h1>Bonsai</h1>
+                    <h2>$19.99</h2>
+                </div>
+                <div id="text">
+                    <p>The purposes of bonsai are primarily contemplation for the viewer, and the pleasant exercise of effort and ingenuity for the grower.</p>
+                    <p>By contrast with other plant cultivation practices, bonsai is not intended for production of food or for medicine. Instead, bonsai practice focuses on long-term cultivation and shaping of one or more small trees growing in a container.</p>
+                </div>
+                <div id="button">
+                    <box><b>ADD TO CART</b></box>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
